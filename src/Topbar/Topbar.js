@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Topbar() {
+function Topbar(props, ref) {
   return <div style={{ height: '50px', backgroundColor: 'red' }}></div>;
 }
 
-export default Topbar;
+export default React.forwardRef(Topbar);
