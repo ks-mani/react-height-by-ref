@@ -6,12 +6,12 @@ export default function App() {
   const heightRef = useRef(null);
 
   useEffect(() => {
-    console.log(heightRef.current.offsetHeight);
+    console.log(heightRef.current);
   });
 
   return (
-    <div ref={heightRef}>
-      <Topbar />
+    <div>
+      <Topbar ref={heightRef} />
     </div>
   );
 }
